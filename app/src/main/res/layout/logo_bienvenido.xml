@@ -11,9 +11,9 @@
     <androidx.appcompat.widget.SearchView
         android:id="@+id/txtBuscar"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginRight="1dp"
         app:iconifiedByDefault="false"
 
         app:queryHint="buscar"/>
@@ -22,9 +22,9 @@
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/idImagen"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginRight="5dp"
+        android:layout_height= "400dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="3dp"
         app:srcCompat="@drawable/pngegg">
     </androidx.appcompat.widget.AppCompatImageView>
 
@@ -33,8 +33,8 @@
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginRight="12dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="3dp"
         android:fontFamily="sans-serif"
         android:text="Aquí en la App de regalos de pelos  tienes todo a la mano "
         android:textAlignment="center"
@@ -42,7 +42,7 @@
         android:textColor="#0D0E10"
         android:textColorHighlight="#3F51B5"
         android:textIsSelectable="true"
-        android:textSize="150sp"
+        android:textSize="50dp"
         android:textStyle="bold|italic"
         android:visibility="visible"
         tools:visibility="visible" >
