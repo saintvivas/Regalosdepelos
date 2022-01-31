@@ -1,31 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:visibility="visible">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
 
 
-    <ImageView
-        android:id="@+id/imageView"
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/txtBuscar"
         android:layout_width="match_parent"
-        android:layout_height="1000dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.02"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.203"
-        app:srcCompat="@drawable/pngegg" />
+        android:layout_height="150dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="10dp"
+        app:iconifiedByDefault="false"
 
-    <TextView
+        app:queryHint="buscar"/>
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/idImagen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        app:srcCompat="@drawable/pngegg">
+    </androidx.appcompat.widget.AppCompatImageView>
+
+
+    <androidx.appcompat.widget.AppCompatCheckedTextView
         android:id="@+id/textView2"
-        android:layout_width="1878dp"
-        android:layout_height="983dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="12dp"
+        android:fontFamily="sans-serif"
         android:text="Aquí en la App de regalos de pelos  tienes todo a la mano "
-        android:textAlignment="viewEnd"
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="#0D0E10"
         android:textColorHighlight="#3F51B5"
@@ -33,23 +45,7 @@
         android:textSize="150sp"
         android:textStyle="bold|italic"
         android:visibility="visible"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        tools:layout_editor_absoluteX="0dp"
-        tools:visibility="visible" />
+        tools:visibility="visible" >
+        </androidx.appcompat.widget.AppCompatCheckedTextView>
 
-    <SearchView
-        android:id="@+id/txtBuscar"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:searchIcon="@android:drawable/ic_menu_search"
-        app:iconifiedByDefault="false"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
