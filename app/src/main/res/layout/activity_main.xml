@@ -6,23 +6,44 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.appcompat.widget.SearchView
-        android:id = "@+id/txtBuscar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:iconifiedByDefault="false"
-        app:queryHint="buscar"
-        app:layout_constraintTop_toTopOf="parent" />
 
+    <SearchView
+        android:id="@+id/barraBusqueda"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        app:layout_constraintLeft_toRightOf="@+id/botonMenu"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/imagenRegalo"/>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvlistaCatalogo"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <Button
+        android:id="@+id/botonMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightof="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtBuscar"/>
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Menu"
+        android:onClick="abrirMenu"/>
+
+    <ImageView
+        android:id="@+id/imagenRegalo"
+        android:layout_width="match_parent"
+        android:layout_height= "400dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/botonMenu"
+        app:srcCompat="@drawable/pngegg" />
+
+    <TextView
+        android:id="@+id/mensajeBienvenida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:text="Aquí en la App de regalos de pelos  tienes todo a la mano"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="32sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagenRegalo" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
