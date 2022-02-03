@@ -28,4 +28,9 @@ public class Menu extends AppCompatActivity {
         Intent intent = new Intent(this, Ubicanos.class);
         startActivity(intent);
     }
+
+    public void abrirOfertas(View view) {
+        Intent intent = new Intent(this, Ofertas.class);
+        startActivity(intent);
+    }
 }
