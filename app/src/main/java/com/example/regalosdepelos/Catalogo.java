@@ -2,20 +2,20 @@ package com.example.regalosdepelos;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Menu extends AppCompatActivity {
+public class Catalogo extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu);
+        setContentView(R.layout.activity_catalogo);
     }
 
-    public void abrirCatalogo(View view) {
-        Intent intent = new Intent(this, Catalogo.class);
-        startActivity(intent);
+    public void onClick(View view) {
+    }
+
+    public void abrirMenu(View view) {
     }
 }

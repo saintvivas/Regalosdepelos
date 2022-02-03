@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Regalosdepelos">
         <activity
+            android:name=".Catalogo"
+            android:exported="false" />
+        <activity
             android:name=".Menu"
             android:exported="false" />
         <activity

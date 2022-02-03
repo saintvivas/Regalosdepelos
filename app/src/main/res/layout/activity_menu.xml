@@ -43,7 +43,8 @@
             android:foreground="?selectableItemBackground"
             app:cardBackgroundColor="#FFFFFF"
             app:cardCornerRadius="8dp"
-            app:cardElevation="6dp">
+            app:cardElevation="6dp"
+            android:onClick="abrirCatalogo">
 
             <TextView
                 android:id="@+id/textView3"
