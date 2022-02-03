@@ -3,10 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Android/AndroidStudioProjects/Regalosdepelos/app/src/main/res/layout/activity_catalogo.xml" value="0.25" />
-        <entry key="..\:/Android/AndroidStudioProjects/Regalosdepelos/app/src/main/res/layout/activity_compra.xml" value="0.2015625" />
-        <entry key="..\:/Android/AndroidStudioProjects/Regalosdepelos/app/src/main/res/layout/activity_contactenos.xml" value="0.33" />
         <entry key="..\:/Android/AndroidStudioProjects/Regalosdepelos/app/src/main/res/layout/activity_main.xml" value="0.2957427536231884" />
+<<<<<<< HEAD
         <entry key="..\:/Android/AndroidStudioProjects/Regalosdepelos/app/src/main/res/layout/activity_menu.xml" value="0.33" />
         <entry key="..\:/Android/AndroidStudioProjects/Regalosdepelos/app/src/main/res/layout/activity_ofertas.xml" value="0.25" />
         <entry key="..\:/Android/AndroidStudioProjects/Regalosdepelos/app/src/main/res/layout/activity_ubicanos.xml" value="0.2015625" />
@@ -14,6 +12,9 @@
         <entry key="..\:/Android/AndroidStudioProjects/Regalosdepelos/app/src/main/res/layout/fragment_repisa.xml" value="0.25" />
         <entry key="..\:/Android/AndroidStudioProjects/Regalosdepelos/app/src/main/res/layout/fragment_topper.xml" value="0.2015625" />
         <entry key="..\:/Android/AndroidStudioProjects/Regalosdepelos/app/src/main/res/layout/logo_bienvenido.xml" value="0.20520833333333333" />
+=======
+        <entry key="app/src/main/res/layout/activity_contactenos.xml" value="0.1" />
+>>>>>>> c17d9c1 (Automodificación del misc.xml)
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="app/src/main/res/layout/logo_bienvenido.xml" value="0.25" />
       </map>
