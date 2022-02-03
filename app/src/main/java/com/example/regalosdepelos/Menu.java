@@ -25,7 +25,7 @@ public class Menu extends AppCompatActivity {
     }
 
     public void abrirUbicanos(View view) {
-        Intent intent = new Intent(this,);
+        Intent intent = new Intent(this, Ubicanos.class);
         startActivity(intent);
     }
 }
