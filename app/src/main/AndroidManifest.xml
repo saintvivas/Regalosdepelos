@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Regalosdepelos">
         <activity
+            android:name=".Ubicanos"
+            android:exported="false" />
+        <activity
             android:name=".Contactenos"
             android:exported="false" />
         <activity

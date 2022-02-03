@@ -84,7 +84,8 @@
             android:foreground="?selectableItemBackground"
             app:cardBackgroundColor="#FFFFFF"
             app:cardCornerRadius="8dp"
-            app:cardElevation="6dp">
+            app:cardElevation="6dp"
+            android:onClick="abrirUbicanos">
 
             <TextView
                 android:id="@+id/textView5"
