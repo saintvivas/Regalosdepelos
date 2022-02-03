@@ -18,4 +18,9 @@ public class Menu extends AppCompatActivity {
         Intent intent = new Intent(this, Catalogo.class);
         startActivity(intent);
     }
+
+    public void abrirContactenos(View view) {
+        Intent intent = new Intent(this, Contactenos.class);
+        startActivity(intent);
+    }
 }
