@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1004485064567",
+    "project_id": "regalosdepelos-adbff",
+    "storage_bucket": "regalosdepelos-adbff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1004485064567:android:ef0b64419fe10d8bec5372",
+        "android_client_info": {
+          "package_name": "com.example.regalosdepelos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1004485064567-arlpeikqqda6rc9o1k9olur2gfbq4v9v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgpIqvukfUhejfRoHs1kNBkiaEkLnYZYQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1004485064567-arlpeikqqda6rc9o1k9olur2gfbq4v9v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
