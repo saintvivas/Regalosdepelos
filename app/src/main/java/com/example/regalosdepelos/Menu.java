@@ -5,19 +5,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.SearchView;
 
-public class MainActivity extends AppCompatActivity {
-    SearchView txtBuscar;
+public class Menu extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_menu);
     }
 
-    public void abrirMenu(View view) {
-        Intent intent = new Intent(this, Menu.class);
+    public void abrirCatalogo(View view) {
+        Intent intent = new Intent(this, Catalogo.class);
         startActivity(intent);
     }
 }
