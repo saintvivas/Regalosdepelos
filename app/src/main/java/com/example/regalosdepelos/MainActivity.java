@@ -5,13 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
-import android.widget.SearchView;
 
 import com.example.regalosdepelos.db.DbHelper;
 
 public class MainActivity extends AppCompatActivity {
-    SearchView txtBuscar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +25,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void abrirMenu(View view) {
-        Intent intent = new Intent(this, Menu.class);
+        Intent intent = new Intent(this, MenuPrincipal.class);
         startActivity(intent);
     }
+
 }

@@ -2,4 +2,9 @@
     <string name="app_name">Regalosdepelos</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_nombre">Nombre:</string>
+    <string name="hint_descripcion">Descripcion:</string>
+    <string name="hint_precio">Precio:</string>
+    <string name="btn_guarda">Guardar registro</string>
+    <string name="menu_registro">Nuevo registro</string>
 </resources>

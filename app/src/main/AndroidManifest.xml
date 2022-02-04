@@ -8,10 +8,39 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:usesCleartextTraffic="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Regalosdepelos">
+        android:theme="@style/Theme.Regalosdepelos"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".VerActivity"
+            android:exported="false"
+            android:parentActivityName=".Registros">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".Registros" />
+        </activity>
+
+        <activity
+            android:name=".EditarActivity"
+            android:exported="false"
+            android:parentActivityName=".Registros">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Registros" />
+        </activity>
+
+        <activity
+            android:name=".Registros"
+            android:exported="false" />
+        <activity
+            android:name=".IngresoTopper"
+            android:exported="false"
+            android:parentActivityName=".Registros">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Registros" />
+        </activity>
         <activity
             android:name=".Ofertas"
             android:exported="false" />
@@ -25,7 +54,7 @@
             android:name=".Catalogo"
             android:exported="false" />
         <activity
-            android:name=".Menu"
+            android:name=".MenuPrincipal"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

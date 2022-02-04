@@ -8,7 +8,7 @@ import android.view.View;
 import android.net.Uri;
 import android.widget.Button;
 
-public class Menu extends AppCompatActivity {
+public class MenuPrincipal extends AppCompatActivity {
 
     private Button botonUbicanos;
     private String url;
@@ -44,6 +44,11 @@ public class Menu extends AppCompatActivity {
 
     public void abrirOfertas(View view) {
         Intent intent = new Intent(this, Ofertas.class);
+        startActivity(intent);
+    }
+
+    public void abrirRegistros(View view) {
+        Intent intent = new Intent(this, Registros.class);
         startActivity(intent);
     }
 }
