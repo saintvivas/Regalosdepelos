@@ -47,8 +47,8 @@ public class DbToppers extends DbHelper {
         SQLiteDatabase db = dbHelper.getWritableDatabase();
 
         ArrayList<Toppers> listaToppers = new ArrayList<>();
-        Toppers topper = null;
-        Cursor cursorToppers = null;
+        Toppers topper;
+        Cursor cursorToppers;
 
         cursorToppers = db.rawQuery("SELECT * FROM " + TABLE_TOPPERS, null);
 
@@ -67,6 +67,71 @@ public class DbToppers extends DbHelper {
 
         return listaToppers;
 
+    }
+
+    public Toppers verTopper(int id){
+
+        DbHelper dbHelper = new DbHelper(context);
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
+
+        Toppers topper = null;
+        Cursor cursorToppers;
+
+        cursorToppers = db.rawQuery("SELECT * FROM " + TABLE_TOPPERS + " WHERE id = " + id + " LIMIT 1", null);
+
+        if(cursorToppers.moveToFirst()){
+            topper = new Toppers();
+            topper.setId(cursorToppers.getInt(0));
+            topper.setNombre(cursorToppers.getString(1));
+            topper.setDescripcion(cursorToppers.getString(2));
+            topper.setPrecio(cursorToppers.getString(3));
+
+        }
+
+        cursorToppers.close();
+
+        return topper;
+
+    }
+
+    public boolean editarTopper(int id, String nombre, String descripcion, String precio){
+
+        boolean correcto = false;
+
+        DbHelper dbHelper = new DbHelper(context);
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
+
+        try {
+            db.execSQL("UPDATE " + TABLE_TOPPERS + " SET nombre = '"+ nombre +"', descripcion = '"+ descripcion +"', precio = '"+ precio +"' WHERE id = '"+ id +"' ");
+            correcto = true;
+        } catch (Exception ex){
+            ex.toString();
+            correcto = false;
+        } finally {
+            db.close();
+        }
+
+        return correcto;
+    }
+
+    public boolean eliminarTopper(int id){
+
+        boolean correcto = false;
+
+        DbHelper dbHelper = new DbHelper(context);
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
+
+        try {
+            db.execSQL("DELETE FROM " + TABLE_TOPPERS + " WHERE id = '" + id + "'");
+            correcto = true;
+        } catch (Exception ex){
+            ex.toString();
+            correcto = false;
+        } finally {
+            db.close();
+        }
+
+        return correcto;
     }
 
 }

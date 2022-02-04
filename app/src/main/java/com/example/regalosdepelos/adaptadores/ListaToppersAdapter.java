@@ -1,5 +1,7 @@
 package com.example.regalosdepelos.adaptadores;
 
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.regalosdepelos.R;
+import com.example.regalosdepelos.VerActivity;
 import com.example.regalosdepelos.entidades.Toppers;
 
 import java.util.ArrayList;
@@ -52,6 +55,16 @@ public class ListaToppersAdapter extends RecyclerView.Adapter<ListaToppersAdapte
             viewNombre = itemView.findViewById(R.id.viewNombre);
             viewDescripcion = itemView.findViewById(R.id.viewDescripcion);
             viewPrecio = itemView.findViewById(R.id.viewPrecio);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Context context = view.getContext();
+                    Intent intent = new Intent(context, VerActivity.class);
+                    intent.putExtra("ID", listaToppers.get(getAdapterPosition()).getId());
+                    context.startActivity(intent);
+                }
+            });
 
         }
     }
