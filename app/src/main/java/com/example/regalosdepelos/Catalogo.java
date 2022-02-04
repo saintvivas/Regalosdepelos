@@ -55,26 +55,4 @@ public class Catalogo extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public boolean onCreateOptionsMenu(Menu menu){
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu_registro, (Menu) menu);
-        return true;
-    }
-
-    public boolean onOptionsItemSelected(MenuItem item){
-        switch (item.getItemId()){
-            case R.id.menuRegistro:
-                nuevoRegistro();
-                return true;
-
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-    }
-
-    private void nuevoRegistro(){
-        Intent intent = new Intent(this, IngresoTopper.class);
-        startActivity(intent);
-    }
-
 }

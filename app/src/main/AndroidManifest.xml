@@ -13,8 +13,17 @@
         android:theme="@style/Theme.Regalosdepelos"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".IngresoTopper"
+            android:name=".Registros"
             android:exported="false" />
+        <activity
+            android:name=".IngresoTopper"
+            android:exported="false"
+            android:parentActivityName=".Registros">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Registros"/>
+        </activity>
+
         <activity
             android:name=".Ofertas"
             android:exported="false" />

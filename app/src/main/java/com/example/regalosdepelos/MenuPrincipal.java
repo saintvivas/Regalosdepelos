@@ -46,4 +46,9 @@ public class MenuPrincipal extends AppCompatActivity {
         Intent intent = new Intent(this, Ofertas.class);
         startActivity(intent);
     }
+
+    public void abrirRegistros(View view) {
+        Intent intent = new Intent(this, Registros.class);
+        startActivity(intent);
+    }
 }
