@@ -16,7 +16,7 @@
             android:id="@+id/cardMenu"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginBottom="12dp"
+            android:layout_gravity="center"
             android:foreground="?selectableItemBackground"
             app:cardBackgroundColor="#2196F3"
             app:cardElevation="6dp">
@@ -25,9 +25,8 @@
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="175dp"
-                android:layout_marginTop="10dp"
                 android:text="MENU"
+                android:layout_gravity="center"
                 android:textAlignment="center"
                 android:textColor="#FFFFFF"
                 android:textSize="20dp"
@@ -38,8 +37,9 @@
             android:id="@+id/cardCatalogo"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="12dp"
-            android:layout_marginLeft="100dp"
+            android:layout_gravity="center"
             android:foreground="?selectableItemBackground"
             app:cardBackgroundColor="#FFFFFF"
             app:cardCornerRadius="8dp"
@@ -50,7 +50,8 @@
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="60dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
                 android:text="Catálogo"
                 android:textSize="20dp"/>
         </androidx.cardview.widget.CardView>
@@ -60,7 +61,7 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
-            android:layout_marginLeft="100dp"
+            android:layout_gravity="center"
             android:foreground="?selectableItemBackground"
             app:cardBackgroundColor="#FFFFFF"
             app:cardCornerRadius="8dp"
@@ -72,7 +73,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Ofertas"
-                android:layout_marginLeft="60dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
                 android:textSize="20dp"/>
         </androidx.cardview.widget.CardView>
 
@@ -81,7 +83,7 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
-            android:layout_marginLeft="100dp"
+            android:layout_gravity="center"
             android:foreground="?selectableItemBackground"
             app:cardBackgroundColor="#FFFFFF"
             app:cardCornerRadius="8dp"
@@ -92,7 +94,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Ubícanos"
-                android:layout_marginLeft="60dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
                 android:textSize="20dp" />
         </androidx.cardview.widget.CardView>
 
@@ -101,7 +104,7 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
-            android:layout_marginLeft="100dp"
+            android:layout_gravity="center"
             android:foreground="?selectableItemBackground"
             app:cardBackgroundColor="#FFFFFF"
             app:cardCornerRadius="8dp"
@@ -113,7 +116,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Contáctenos"
-                android:layout_marginLeft="60dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
                 android:textSize="20dp" />
         </androidx.cardview.widget.CardView>
 
@@ -122,7 +126,7 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
-            android:layout_marginLeft="100dp"
+            android:layout_gravity="center"
             android:foreground="?selectableItemBackground"
             app:cardBackgroundColor="#FFFFFF"
             app:cardCornerRadius="8dp"
@@ -134,7 +138,30 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Ver registros"
-                android:layout_marginLeft="60dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDescripcion"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_gravity="center"
+            android:foreground="?selectableItemBackground"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="6dp"
+            android:onClick="abrirDescripcion">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descripcion APP"
+                android:layout_gravity="center"
+                android:textAlignment="center"
                 android:textSize="20dp" />
         </androidx.cardview.widget.CardView>
 
