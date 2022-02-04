@@ -20,6 +20,7 @@
         android:layout_height="52dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="#2196F3"
         android:text="Menu"
         android:onClick="abrirMenu"/>
 

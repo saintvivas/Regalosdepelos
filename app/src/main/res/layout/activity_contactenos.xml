@@ -21,6 +21,7 @@
         android:layout_height="52dp"
         android:onClick="abrirMenu"
         android:text="Menu"
+        android:backgroundTint="#2196F3"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

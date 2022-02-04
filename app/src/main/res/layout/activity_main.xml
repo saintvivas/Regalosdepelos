@@ -7,6 +7,8 @@
     tools:context=".MainActivity">
 
 
+
+
     <SearchView
         android:id="@+id/barraBusqueda"
         android:layout_width="300dp"
@@ -19,10 +21,12 @@
         android:id="@+id/botonMenu"
         android:layout_width="wrap_content"
         android:layout_height="52dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="#2196F3"
+        android:onClick="abrirMenu"
         android:text="Menu"
-        android:onClick="abrirMenu"/>
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <ImageView
         android:id="@+id/imagenRegalo"

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="textStart"
+    tools:context=".DescripcionApp">
+
+    <SearchView
+        android:id="@+id/barraBusqueda"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintLeft_toRightOf="@+id/botonMenu"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/botonMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:onClick="abrirMenu"
+        android:text="Menu"
+        android:backgroundTint="#2196F3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mensajeDescripcion"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="sans-serif-light"
+        android:text="La aplicacion Regalos de Pelos brinda una interfaz muy sencilla la cual tiene como finalidad principal mostrar los articulos disponibles al cliente, a su vez posee la facilidad de ubicar el almacen fisico mediante la opcion Ubícanos, seguido a esto existe la opción Contáctenos en la cual se encuentran los datos de contacto y la opcion de seguirnos en las redes sociales mediante el click del icono respectivo a la red social."
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/barraBusqueda"
+        app:layout_constraintVertical_bias="0.06999999" />
+
+    <TextView
+        android:id="@+id/texCreditos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CREDITOS"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mensajeDescripcion"
+        app:layout_constraintVertical_bias="0.06999999" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridCatalogo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:columnCount="1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texCreditos"
+        app:layout_constraintVertical_bias="0.15"
+        app:rowCount="2">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardSantiago"
+            android:layout_width="200dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="12dp"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="6dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <TextView
+                android:id="@+id/txtSantiago"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Santiago Vivas Lopez          santivivas@unicauca.edu.co                       +57 3014530937"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardCarlos"
+            android:layout_width="200dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="12dp"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="6dp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1">
+
+            <TextView
+                android:id="@+id/txtCarlos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Carlos Eduardo Joven García cejoven@unicauca.edu.co          +57 3112930490"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.gridlayout.widget.GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
