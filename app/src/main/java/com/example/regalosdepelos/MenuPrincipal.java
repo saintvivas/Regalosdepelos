@@ -8,7 +8,7 @@ import android.view.View;
 import android.net.Uri;
 import android.widget.Button;
 
-public class Menu extends AppCompatActivity {
+public class MenuPrincipal extends AppCompatActivity {
 
     private Button botonUbicanos;
     private String url;

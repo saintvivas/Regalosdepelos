@@ -47,7 +47,7 @@ public class Contactenos extends AppCompatActivity {
     }
 
     public void abrirMenu(View view) {
-        Intent intent = new Intent(this, Menu.class);
+        Intent intent = new Intent(this, MenuPrincipal.class);
         startActivity(intent);
     }
 }
