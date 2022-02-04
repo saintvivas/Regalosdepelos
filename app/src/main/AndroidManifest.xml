@@ -13,14 +13,16 @@
         android:theme="@style/Theme.Regalosdepelos"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".DescripcionApp"
+            android:exported="false" />
+        <activity
             android:name=".VerActivity"
             android:exported="false"
             android:parentActivityName=".Registros">
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value=".Registros" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Registros" />
         </activity>
-
         <activity
             android:name=".EditarActivity"
             android:exported="false"
@@ -29,10 +31,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Registros" />
         </activity>
-
         <activity
             android:name=".Registros"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".MenuPrincipal">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuPrincipal" />
+        </activity>
+
         <activity
             android:name=".IngresoTopper"
             android:exported="false"
