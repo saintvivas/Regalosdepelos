@@ -6,23 +6,30 @@
     android:layout_height="match_parent"
     tools:context=".Ofertas">
 
-    <SearchView
-        android:id="@+id/barraBusqueda"
-        android:layout_width="300dp"
-        android:layout_height="40dp"
-        app:layout_constraintLeft_toRightOf="@+id/botonMenu"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="5dp"/>
-
-    <Button
-        android:id="@+id/botonMenu"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/layoutPrincipal"
+        android:layout_width="match_parent"
         android:layout_height="52dp"
+        android:background="#2196F3"
+        android:orientation="horizontal"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:backgroundTint="#2196F3"
-        android:text="Menu"
-        android:onClick="abrirMenu"/>
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageBotonMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:backgroundTint="#2196F3"
+            app:srcCompat="@drawable/ic_menu" />
+
+        <SearchView
+            android:id="@+id/barraBusqueda"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:clipChildren="true" />
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/mensajeBienvenida"

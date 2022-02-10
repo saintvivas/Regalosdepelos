@@ -2,16 +2,22 @@ package com.example.regalosdepelos;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 
 public class Contactenos extends AppCompatActivity {
 
-    private Button botonFacebook;
-    private Button botonInstagram;
+    ImageButton imageBotonMenu;
+
+    ImageView imageFacebook;
+    ImageView imageInstagram;
+
     private String url2;
     private String url;
 
@@ -20,9 +26,20 @@ public class Contactenos extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contactenos);
 
-        botonFacebook = findViewById(R.id.botonFacebook);
+        imageBotonMenu = findViewById(R.id.imageBotonMenu);
+
+        imageBotonMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Context context = v.getContext();
+                Intent intent = new Intent(context, MenuPrincipal.class);
+                startActivity(intent);
+            }
+        });
+
+        imageFacebook = findViewById(R.id.imageFacebook);
         url = "https://www.facebook.com/regalosdepelos";
-        botonFacebook.setOnClickListener(new View.OnClickListener(){
+        imageFacebook.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View view) {
@@ -32,9 +49,9 @@ public class Contactenos extends AppCompatActivity {
             }
         });
 
-        botonInstagram = findViewById(R.id.botonInstagram);
+        imageInstagram = findViewById(R.id.imageInstagram);
         url2 = "https://www.instagram.com/regalosdepelos/";
-        botonInstagram.setOnClickListener(new View.OnClickListener(){
+        imageInstagram.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View view) {
@@ -46,8 +63,4 @@ public class Contactenos extends AppCompatActivity {
 
     }
 
-    public void abrirMenu(View view) {
-        Intent intent = new Intent(this, MenuPrincipal.class);
-        startActivity(intent);
-    }
 }

@@ -7,25 +7,30 @@
     tools:context=".MainActivity">
 
 
-
-
-    <SearchView
-        android:id="@+id/barraBusqueda"
-        android:layout_width="300dp"
-        android:layout_height="40dp"
-        app:layout_constraintLeft_toRightOf="@+id/botonMenu"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/imagenRegalo"/>
-
-    <Button
-        android:id="@+id/botonMenu"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/layoutPrincipal"
+        android:layout_width="match_parent"
         android:layout_height="52dp"
-        android:backgroundTint="#2196F3"
-        android:onClick="abrirMenu"
-        android:text="Menu"
+        android:background="#2196F3"
+        android:orientation="horizontal"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageBotonMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:backgroundTint="#2196F3"
+            app:srcCompat="@drawable/ic_menu" />
+
+        <SearchView
+            android:id="@+id/barraBusqueda"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:clipChildren="true" />
+
+    </LinearLayout>
 
 
     <ImageView
@@ -33,7 +38,7 @@
         android:layout_width="match_parent"
         android:layout_height= "400dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/botonMenu"
+        app:layout_constraintTop_toBottomOf="@id/layoutPrincipal"
         app:srcCompat="@drawable/pngegg" />
 
     <TextView
