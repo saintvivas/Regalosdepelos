@@ -52,9 +52,6 @@
             android:name=".Ofertas"
             android:exported="false" />
         <activity
-            android:name=".Ubicanos"
-            android:exported="false" />
-        <activity
             android:name=".Contactenos"
             android:exported="false" />
         <activity

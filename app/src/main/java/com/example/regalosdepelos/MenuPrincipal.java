@@ -1,6 +1,7 @@
 package com.example.regalosdepelos;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,7 +11,8 @@ import android.widget.Button;
 
 public class MenuPrincipal extends AppCompatActivity {
 
-    private Button botonUbicanos;
+    CardView cardUbicanos;
+
     private String url;
 
     @Override
@@ -18,9 +20,9 @@ public class MenuPrincipal extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
-        botonUbicanos = findViewById(R.id.botonUbicanos);
+        cardUbicanos = findViewById(R.id.cardUbicanos);
         url = "https://www.google.com/maps/place/Regalos+de+Pelos+corte+y+grabado+laser/@2.4590285,-76.5964732,17z/data=!4m5!3m4!1s0x8e300320785da1b5:0x2a74793454922555!8m2!3d2.460294!4d-76.5957962";
-        botonUbicanos.setOnClickListener(new View.OnClickListener(){
+        cardUbicanos.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View v) {

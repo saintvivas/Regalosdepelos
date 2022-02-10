@@ -6,35 +6,42 @@
     android:layout_height="match_parent"
     tools:context=".Catalogo">
 
-    <SearchView
-        android:id="@+id/barraBusqueda"
-        android:layout_width="300dp"
-        android:layout_height="40dp"
-        app:layout_constraintLeft_toRightOf="@+id/botonMenu"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/gridCatalogo"/>
-
-    <Button
-        android:id="@+id/botonMenu"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/layoutPrincipal"
+        android:layout_width="match_parent"
         android:layout_height="52dp"
+        android:background="#2196F3"
+        android:orientation="horizontal"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:backgroundTint="#2196F3"
-        android:text="Menu"
-        android:onClick="abrirMenu"/>
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageBotonMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:backgroundTint="#2196F3"
+            app:srcCompat="@drawable/ic_menu" />
+
+        <SearchView
+            android:id="@+id/barraBusqueda"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:clipChildren="true" />
+
+    </LinearLayout>
 
     <androidx.gridlayout.widget.GridLayout
         android:id="@+id/gridCatalogo"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         app:columnCount="3"
-        app:layout_constraintBottom_toTopOf="@+id/contenedorFragment"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/botonMenu"
-        app:layout_constraintVertical_bias="0.15"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutPrincipal"
+        app:layout_constraintVertical_bias="0.01"
         app:rowCount="1">
 
         <androidx.cardview.widget.CardView
@@ -49,7 +56,7 @@
             app:cardCornerRadius="8dp"
             app:cardElevation="6dp"
             app:layout_columnWeight="1"
-            app:layout_rowWeight="1" >
+            app:layout_rowWeight="1">
 
             <Button
                 android:id="@+id/botonTopper"
@@ -118,9 +125,11 @@
         android:id="@+id/contenedorFragment"
         android:layout_width="400dp"
         android:layout_height="500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gridCatalogo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintVertical_bias="0.05">
 
     </FrameLayout>
 

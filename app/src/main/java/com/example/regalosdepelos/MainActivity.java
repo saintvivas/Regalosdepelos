@@ -25,10 +25,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        imageBotonMenu = findViewById(R.id.imageBotonMenu);
-
         DbHelper dbHelper = new DbHelper(MainActivity.this);
         SQLiteDatabase db = dbHelper.getWritableDatabase();
+
+        imageBotonMenu = findViewById(R.id.imageBotonMenu);
 
         imageBotonMenu.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,11 +39,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-    }
-
-    public void abrirMenu(View view) {
-        Intent intent = new Intent(this, MenuPrincipal.class);
-        startActivity(intent);
     }
 
 }
